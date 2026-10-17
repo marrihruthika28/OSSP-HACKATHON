@@ -1,0 +1,311 @@
+18154 16:36:54.664704 execve("/usr/bin/ls", ["ls", "-la"], 0x7ffdce6ccba8 /* 30 vars */) = 0 <0.001575>
+18154 16:36:54.666959 brk(NULL)         = 0x5d5eb0f4d000 <0.000178>
+18154 16:36:54.667731 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7462a467a000 <0.000252>
+18154 16:36:54.668313 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000105>
+18154 16:36:54.668670 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000197>
+18154 16:36:54.669132 fstat(3, {st_mode=S_IFREG|0644, st_size=28383, ...}) = 0 <0.000354>
+18154 16:36:54.669966 mmap(NULL, 28383, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7462a4673000 <0.000559>
+18154 16:36:54.670787 close(3)          = 0 <0.000166>
+18154 16:36:54.671232 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libsystemd.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000243>
+18154 16:36:54.671762 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000396>
+18154 16:36:54.672456 fstat(3, {st_mode=S_IFREG|0644, st_size=1127960, ...}) = 0 <0.000269>
+18154 16:36:54.672897 mmap(NULL, 1128840, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7462a455f000 <0.000175>
+18154 16:36:54.673152 mmap(0x7462a4578000, 749568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7462a4578000 <0.000100>
+18154 16:36:54.673431 mmap(0x7462a462f000, 237568, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd0000) = 0x7462a462f000 <0.000341>
+18154 16:36:54.674033 mmap(0x7462a4669000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10a000) = 0x7462a4669000 <0.000080>
+18154 16:36:54.674198 mmap(0x7462a4672000, 2440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7462a4672000 <0.000053>
+18154 16:36:54.674322 close(3)          = 0 <0.000044>
+18154 16:36:54.674424 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3 <0.000046>
+18154 16:36:54.674552 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000321>
+18154 16:36:54.674930 fstat(3, {st_mode=S_IFREG|0644, st_size=199120, ...}) = 0 <0.000041>
+18154 16:36:54.675037 mmap(NULL, 206288, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7462a452c000 <0.000046>
+18154 16:36:54.675133 mmap(0x7462a4533000, 135168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7462a4533000 <0.000047>
+18154 16:36:54.675228 mmap(0x7462a4554000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7462a4554000 <0.000041>
+18154 16:36:54.675317 mmap(0x7462a455b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7462a455b000 <0.000041>
+18154 16:36:54.675411 mmap(0x7462a455d000, 5584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7462a455d000 <0.000050>
+18154 16:36:54.675524 close(3)          = 0 <0.000284>
+18154 16:36:54.675968 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3 <0.000222>
+18154 16:36:54.676314 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000067>
+18154 16:36:54.676661 fstat(3, {st_mode=S_IFREG|0644, st_size=187120, ...}) = 0 <0.000144>
+18154 16:36:54.676938 mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7462a44fe000 <0.000072>
+18154 16:36:54.677093 mmap(0x7462a4502000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7462a4502000 <0.000177>
+18154 16:36:54.677411 mmap(0x7462a4526000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7462a4526000 <0.000221>
+18154 16:36:54.677830 mmap(0x7462a452a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7462a452a000 <0.000065>
+18154 16:36:54.678004 close(3)          = 0 <0.000058>
+18154 16:36:54.678141 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000183>
+18154 16:36:54.678414 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000059>
+18154 16:36:54.678773 fstat(3, {st_mode=S_IFREG|0644, st_size=1198376, ...}) = 0 <0.000082>
+18154 16:36:54.679118 mmap(NULL, 1200152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7462a43d8000 <0.000205>
+18154 16:36:54.679486 mmap(0x7462a43ea000, 655360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7462a43ea000 <0.000238>
+18154 16:36:54.679944 mmap(0x7462a448a000, 466944, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7462a448a000 <0.000133>
+18154 16:36:54.680289 mmap(0x7462a44fc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x123000) = 0x7462a44fc000 <0.000065>
+18154 16:36:54.680470 close(3)          = 0 <0.000057>
+18154 16:36:54.680609 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000065>
+18154 16:36:54.680754 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832 <0.000037>
+18154 16:36:54.680840 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840 <0.000050>
+18154 16:36:54.681152 fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0 <0.000038>
+18154 16:36:54.681248 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840 <0.000037>
+18154 16:36:54.681333 mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7462a4000000 <0.000054>
+18154 16:36:54.681434 mmap(0x7462a4028000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7462a4028000 <0.000262>
+18154 16:36:54.681849 mmap(0x7462a41c0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7462a41c0000 <0.000245>
+18154 16:36:54.682147 mmap(0x7462a420e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x7462a420e000 <0.000042>
+18154 16:36:54.682241 mmap(0x7462a4214000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7462a4214000 <0.000038>
+18154 16:36:54.682340 close(3)          = 0 <0.000036>
+18154 16:36:54.682429 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000041>
+18154 16:36:54.682519 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000036>
+18154 16:36:54.682603 fstat(3, {st_mode=S_IFREG|0644, st_size=699056, ...}) = 0 <0.000036>
+18154 16:36:54.682688 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7462a43d6000 <0.000038>
+18154 16:36:54.682776 mmap(NULL, 701112, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7462a432a000 <0.000038>
+18154 16:36:54.682859 mmap(0x7462a432d000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7462a432d000 <0.000045>
+18154 16:36:54.682952 mmap(0x7462a43a9000, 176128, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7f000) = 0x7462a43a9000 <0.000040>
+18154 16:36:54.683037 mmap(0x7462a43d4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa9000) = 0x7462a43d4000 <0.000038>
+18154 16:36:54.683135 close(3)          = 0 <0.000036>
+18154 16:36:54.683259 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7462a4328000 <0.000046>
+18154 16:36:54.683372 arch_prctl(ARCH_SET_FS, 0x7462a4329080) = 0 <0.000035>
+18154 16:36:54.683456 set_tid_address(0x7462a43296a8) = 18154 <0.000035>
+18154 16:36:54.683536 set_robust_list(0x7462a4329360, 24) = 0 <0.000035>
+18154 16:36:54.683616 rseq(0x7462a4328b20, 0x20, 0, 0x53053053) = 0 <0.000036>
+18154 16:36:54.683780 mprotect(0x7462a420e000, 16384, PROT_READ) = 0 <0.000059>
+18154 16:36:54.683985 mprotect(0x7462a43d4000, 4096, PROT_READ) = 0 <0.000042>
+18154 16:36:54.684106 mprotect(0x7462a44fc000, 4096, PROT_READ) = 0 <0.000040>
+18154 16:36:54.684196 mprotect(0x7462a452a000, 4096, PROT_READ) = 0 <0.000041>
+18154 16:36:54.684323 mprotect(0x7462a455b000, 4096, PROT_READ) = 0 <0.000041>
+18154 16:36:54.684487 mprotect(0x7462a4669000, 32768, PROT_READ) = 0 <0.000042>
+18154 16:36:54.685796 mprotect(0x5d5e8324a000, 1466368, PROT_READ) = 0 <0.000078>
+18154 16:36:54.685956 mprotect(0x7462a46bf000, 8192, PROT_READ) = 0 <0.000051>
+18154 16:36:54.686084 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000035>
+18154 16:36:54.686192 getrandom("\x20\xad\xd8\xf1\x94\x09\x14\x7e", 8, GRND_NONBLOCK) = 8 <0.000165>
+18154 16:36:54.686429 munmap(0x7462a4673000, 28383) = 0 <0.000050>
+18154 16:36:54.686570 statfs("/sys/fs/selinux", {f_type=SYSFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0xbddeb90c, 0x2fafcb36]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_NOATIME}) = 0 <0.000045>
+18154 16:36:54.686675 statfs("/selinux", 0x7ffd1ffdabb0) = -1 ENOENT (No such file or directory) <0.000035>
+18154 16:36:54.686765 brk(NULL)         = 0x5d5eb0f4d000 <0.000033>
+18154 16:36:54.686842 brk(0x5d5eb0f6e000) = 0x5d5eb0f6e000 <0.000037>
+18154 16:36:54.687223 openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3 <0.000043>
+18154 16:36:54.687314 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000034>
+18154 16:36:54.687396 read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 442 <0.000050>
+18154 16:36:54.687496 lseek(3, 0, SEEK_CUR) = 442 <0.000039>
+18154 16:36:54.687588 lseek(3, 416, SEEK_SET) = 416 <0.000042>
+18154 16:36:54.687677 close(3)          = 0 <0.000037>
+18154 16:36:54.687760 openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3 <0.000055>
+18154 16:36:54.687865 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000313>
+18154 16:36:54.688242 read(3, "none /usr/lib/modules/6.18.33.2-"..., 1024) = 1024 <0.000078>
+18154 16:36:54.688374 read(3, "e 0 0\ndevpts /dev/pts devpts rw,"..., 1024) = 1024 <0.000056>
+18154 16:36:54.688479 read(3, ",access=client,msize=65536,trans"..., 1024) = 1024 <0.000060>
+18154 16:36:54.688588 read(3, "er 0 0\nsnapfuse /snap/core24/212"..., 1024) = 1024 <0.000058>
+18154 16:36:54.688694 read(3, " fuse.snapfuse ro,nodev,relatime"..., 1024) = 617 <0.000050>
+18154 16:36:54.688792 read(3, "", 1024) = 0 <0.000035>
+18154 16:36:54.688873 close(3)          = 0 <0.000247>
+18154 16:36:54.689166 access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory) <0.000038>
+18154 16:36:54.689277 fcntl(0, F_GETFD) = 0 <0.000035>
+18154 16:36:54.689359 fcntl(1, F_GETFD) = 0 <0.000035>
+18154 16:36:54.689470 fcntl(2, F_GETFD) = 0 <0.000234>
+18154 16:36:54.689764 rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000040>
+18154 16:36:54.690143 poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout) <0.000044>
+18154 16:36:54.690244 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7462a4045cb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000036>
+18154 16:36:54.690334 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3 <0.000045>
+18154 16:36:54.690427 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000035>
+18154 16:36:54.690514 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000052>
+18154 16:36:54.690621 read(3, "5d5e82874000-5d5e82968000 r--p 0"..., 1024) = 1024 <0.000047>
+18154 16:36:54.690734 read(3, "30 40093                      /u"..., 1024) = 1024 <0.000044>
+18154 16:36:54.690832 read(3, "m.so.6\n7462a43ea000-7462a448a000"..., 1024) = 1024 <0.000043>
+18154 16:36:54.691229 read(3, "2a4533000 r--p 00000000 08:30 14"..., 1024) = 1024 <0.000050>
+18154 16:36:54.691341 read(3, "                 /usr/lib/x86_64"..., 1024) = 1024 <0.000044>
+18154 16:36:54.691439 read(3, "62a46c2000 rw-p 0003d000 08:30 4"..., 1024) = 235 <0.000039>
+18154 16:36:54.691530 close(3)          = 0 <0.000040>
+18154 16:36:54.691626 sched_getaffinity(18154, 32, [0 1 2 3 4 5 6 7]) = 8 <0.000040>
+18154 16:36:54.691726 rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000037>
+18154 16:36:54.691814 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0 <0.000037>
+18154 16:36:54.692199 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7462a4677000 <0.000061>
+18154 16:36:54.692321 mprotect(0x7462a4677000, 4096, PROT_NONE) = 0 <0.000285>
+18154 16:36:54.692792 sigaltstack({ss_sp=0x7462a4678000, ss_flags=0, ss_size=8192}, NULL) = 0 <0.000079>
+18154 16:36:54.693105 gettid()          = 18154 <0.000064>
+18154 16:36:54.693366 rt_sigaction(SIGSEGV, {sa_handler=0x5d5e82b9f390, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7462a4045cb0}, NULL, 8) = 0 <0.000348>
+18154 16:36:54.694093 rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000206>
+18154 16:36:54.694646 rt_sigaction(SIGBUS, {sa_handler=0x5d5e82b9f390, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7462a4045cb0}, NULL, 8) = 0 <0.000086>
+18154 16:36:54.695049 readlink("/proc/self/exe", "/usr/lib/cargo/bin/coreutils/ls", 256) = 31 <0.000089>
+18154 16:36:54.695287 statx(AT_FDCWD, "/usr/share/coreutils/locales/ls", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000064>
+18154 16:36:54.695528 statx(AT_FDCWD, "/usr/share/coreutils/locales/uucore", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000101>
+18154 16:36:54.695821 openat(AT_FDCWD, "/usr/share/coreutils/locales/uucore/en-US.ftl", O_RDONLY|O_CLOEXEC) = 3 <0.000189>
+18154 16:36:54.696107 statx(3, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=4113, ...}) = 0 <0.000060>
+18154 16:36:54.696266 read(3, "# Common strings shared across a"..., 4113) = 4113 <0.000060>
+18154 16:36:54.696476 read(3, "", 32)   = 0 <0.000075>
+18154 16:36:54.696803 close(3)          = 0 <0.000121>
+18154 16:36:54.697196 statx(AT_FDCWD, "/usr/share/coreutils/locales/ls", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000041>
+18154 16:36:54.697299 openat(AT_FDCWD, "/usr/share/coreutils/locales/ls/en-US.ftl", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000047>
+18154 16:36:54.698006 brk(0x5d5eb0f8f000) = 0x5d5eb0f8f000 <0.000051>
+18154 16:36:54.698241 rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7462a4045cb0}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7462a4045cb0}, 8) = 0 <0.000037>
+18154 16:36:54.698334 rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7462a4045cb0}, {sa_handler=0x5d5e82b9f390, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7462a4045cb0}, 8) = 0 <0.000035>
+18154 16:36:54.698441 rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7462a4045cb0}, {sa_handler=0x5d5e82b9f390, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7462a4045cb0}, 8) = 0 <0.000037>
+18154 16:36:54.698615 ioctl(1, TCGETS2, 0x7ffd1ffcd360) = -1 ENOTTY (Inappropriate ioctl for device) <0.000039>
+18154 16:36:54.699165 brk(0x5d5eb0fb0000) = 0x5d5eb0fb0000 <0.000044>
+18154 16:36:54.699371 ioctl(1, TCGETS2, 0x7ffd1ffda080) = -1 ENOTTY (Inappropriate ioctl for device) <0.000046>
+18154 16:36:54.699472 ioctl(2, TCGETS2, 0x7ffd1ffda080) = -1 ENOTTY (Inappropriate ioctl for device) <0.000037>
+18154 16:36:54.699563 ioctl(0, TCGETS2, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0 <0.000042>
+18154 16:36:54.699672 ioctl(0, TIOCGWINSZ, {ws_row=30, ws_col=59, ws_xpixel=0, ws_ypixel=0}) = 0 <0.000037>
+18154 16:36:54.699763 ioctl(1, TCGETS2, 0x7ffd1ffda0b0) = -1 ENOTTY (Inappropriate ioctl for device) <0.000041>
+18154 16:36:54.699865 ioctl(1, TCGETS2, 0x7ffd1ffda0b0) = -1 ENOTTY (Inappropriate ioctl for device) <0.000335>
+18154 16:36:54.700320 statx(AT_FDCWD, ".", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000042>
+18154 16:36:54.700436 openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000042>
+18154 16:36:54.700528 fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000036>
+18154 16:36:54.700620 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0 <0.000037>
+18154 16:36:54.700714 getdents64(3, 0x5d5eb0f90880 /* 11 entries */, 32768) = 344 <0.000056>
+18154 16:36:54.700830 getdents64(3, 0x5d5eb0f90880 /* 0 entries */, 32768) = 0 <0.000036>
+18154 16:36:54.701197 statx(AT_FDCWD, ".", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000042>
+18154 16:36:54.701301 statx(AT_FDCWD, "./..", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000039>
+18154 16:36:54.701393 statx(3, ".venv", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000071>
+18154 16:36:54.701711 statx(3, "__pycache__", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000043>
+18154 16:36:54.701813 statx(3, "app.py", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=930, ...}) = 0 <0.000040>
+18154 16:36:54.702203 statx(3, "first_trace.txt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=17083, ...}) = 0 <0.000044>
+18154 16:36:54.702303 statx(3, "report.csv", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=42542, ...}) = 0 <0.000040>
+18154 16:36:54.702396 statx(3, "static", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000039>
+18154 16:36:54.702487 statx(3, "templates", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0 <0.000039>
+18154 16:36:54.702579 statx(3, "trace.log", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=18916, ...}) = 0 <0.000039>
+18154 16:36:54.702675 statx(3, "tracer.py", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2649, ...}) = 0 <0.000040>
+18154 16:36:54.702819 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000069>
+18154 16:36:54.703242 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000078>
+18154 16:36:54.703382 close(4)          = 0 <0.000049>
+18154 16:36:54.703482 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000042>
+18154 16:36:54.703575 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000043>
+18154 16:36:54.703671 close(4)          = 0 <0.000041>
+18154 16:36:54.703770 newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0 <0.000052>
+18154 16:36:54.703885 newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0 <0.000040>
+18154 16:36:54.703989 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4 <0.000043>
+18154 16:36:54.704087 fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0 <0.000039>
+18154 16:36:54.704180 read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 526 <0.000041>
+18154 16:36:54.704291 read(4, "", 4096) = 0 <0.000039>
+18154 16:36:54.704382 fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0 <0.000039>
+18154 16:36:54.704485 close(4)          = 0 <0.000041>
+18154 16:36:54.704579 openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4 <0.000042>
+18154 16:36:54.704674 fstat(4, {st_mode=S_IFREG|0644, st_size=1396, ...}) = 0 <0.000039>
+18154 16:36:54.704765 lseek(4, 0, SEEK_SET) = 0 <0.000043>
+18154 16:36:54.704868 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1396 <0.000348>
+18154 16:36:54.705301 close(4)          = 0 <0.000039>
+18154 16:36:54.705402 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000055>
+18154 16:36:54.705782 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000053>
+18154 16:36:54.705891 close(4)          = 0 <0.000253>
+18154 16:36:54.706202 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000045>
+18154 16:36:54.706299 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000047>
+18154 16:36:54.706402 close(4)          = 0 <0.000042>
+18154 16:36:54.706495 newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0 <0.000040>
+18154 16:36:54.706594 openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 4 <0.000043>
+18154 16:36:54.706690 fstat(4, {st_mode=S_IFREG|0644, st_size=826, ...}) = 0 <0.000040>
+18154 16:36:54.706783 lseek(4, 0, SEEK_SET) = 0 <0.000039>
+18154 16:36:54.706872 read(4, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 826 <0.000358>
+18154 16:36:54.707348 close(4)          = 0 <0.000045>
+18154 16:36:54.707459 listxattr(".", "", 4096) = 0 <0.000045>
+18154 16:36:54.707561 listxattr("./..", "", 4096) = 0 <0.000040>
+18154 16:36:54.707655 listxattr("./.venv", "", 4096) = 0 <0.000040>
+18154 16:36:54.707747 listxattr("./__pycache__", "", 4096) = 0 <0.000039>
+18154 16:36:54.707839 listxattr("./app.py", "", 4096) = 0 <0.000058>
+18154 16:36:54.707960 listxattr("./first_trace.txt", "", 4096) = 0 <0.000043>
+18154 16:36:54.708061 listxattr("./report.csv", "", 4096) = 0 <0.000039>
+18154 16:36:54.708154 listxattr("./static", "", 4096) = 0 <0.000040>
+18154 16:36:54.708247 listxattr("./templates", "", 4096) = 0 <0.000040>
+18154 16:36:54.708339 listxattr("./trace.log", "", 4096) = 0 <0.000039>
+18154 16:36:54.708432 listxattr("./tracer.py", "", 4096) = 0 <0.000040>
+18154 16:36:54.708524 listxattr(".", "", 4096) = 0 <0.000040>
+18154 16:36:54.708635 openat(AT_FDCWD, "/usr/share/zoneinfo", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000042>
+18154 16:36:54.708729 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000045>
+18154 16:36:54.708841 getdents64(4, 0x5d5eb0f988c0 /* 25 entries */, 32768) = 760 <0.000058>
+18154 16:36:54.708990 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000390>
+18154 16:36:54.709634 close(4)          = 0 <0.000119>
+18154 16:36:54.710072 openat(AT_FDCWD, "/usr/share/zoneinfo/Australia", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000180>
+18154 16:36:54.710442 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000273>
+18154 16:36:54.710838 getdents64(4, 0x5d5eb0f988c0 /* 16 entries */, 32768) = 496 <0.000127>
+18154 16:36:54.711094 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000066>
+18154 16:36:54.711246 close(4)          = 0 <0.000071>
+18154 16:36:54.711400 openat(AT_FDCWD, "/usr/share/zoneinfo/Atlantic", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000082>
+18154 16:36:54.711579 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000069>
+18154 16:36:54.711832 getdents64(4, 0x5d5eb0f988c0 /* 13 entries */, 32768) = 408 <0.000114>
+18154 16:36:54.712071 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000067>
+18154 16:36:54.712278 close(4)          = 0 <0.000085>
+18154 16:36:54.712462 openat(AT_FDCWD, "/usr/share/zoneinfo/Pacific", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000097>
+18154 16:36:54.712804 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000177>
+18154 16:36:54.713175 getdents64(4, 0x5d5eb0f988c0 /* 43 entries */, 32768) = 1312 <0.000322>
+18154 16:36:54.713915 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000162>
+18154 16:36:54.714284 close(4)          = 0 <0.000215>
+18154 16:36:54.714979 openat(AT_FDCWD, "/usr/share/zoneinfo/Etc", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000266>
+18154 16:36:54.715609 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000225>
+18154 16:36:54.716083 getdents64(4, 0x5d5eb0f988c0 /* 37 entries */, 32768) = 1128 <0.000124>
+18154 16:36:54.716357 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000040>
+18154 16:36:54.716450 close(4)          = 0 <0.000041>
+18154 16:36:54.716554 openat(AT_FDCWD, "/usr/share/zoneinfo/Asia", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000050>
+18154 16:36:54.716754 fstat(4, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0 <0.000042>
+18154 16:36:54.716853 getdents64(4, 0x5d5eb0f988c0 /* 89 entries */, 32768) = 2792 <0.000128>
+18154 16:36:54.717125 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000036>
+18154 16:36:54.717210 close(4)          = 0 <0.000192>
+18154 16:36:54.717483 openat(AT_FDCWD, "/usr/share/zoneinfo/Arctic", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000103>
+18154 16:36:54.717651 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000208>
+18154 16:36:54.717914 getdents64(4, 0x5d5eb0f988c0 /* 3 entries */, 32768) = 80 <0.000040>
+18154 16:36:54.718008 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000040>
+18154 16:36:54.718103 close(4)          = 0 <0.000037>
+18154 16:36:54.718189 openat(AT_FDCWD, "/usr/share/zoneinfo/America", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000040>
+18154 16:36:54.718279 fstat(4, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0 <0.000050>
+18154 16:36:54.718466 getdents64(4, 0x5d5eb0f988c0 /* 138 entries */, 32768) = 4440 <0.000079>
+18154 16:36:54.718792 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000035>
+18154 16:36:54.718872 close(4)          = 0 <0.000037>
+18154 16:36:54.718953 openat(AT_FDCWD, "/usr/share/zoneinfo/America/Kentucky", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000038>
+18154 16:36:54.719037 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000034>
+18154 16:36:54.719130 getdents64(4, 0x5d5eb0f988c0 /* 4 entries */, 32768) = 112 <0.000043>
+18154 16:36:54.719235 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000034>
+18154 16:36:54.719314 close(4)          = 0 <0.000035>
+18154 16:36:54.719394 openat(AT_FDCWD, "/usr/share/zoneinfo/America/Argentina", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000038>
+18154 16:36:54.719478 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000034>
+18154 16:36:54.719560 getdents64(4, 0x5d5eb0f988c0 /* 14 entries */, 32768) = 432 <0.000039>
+18154 16:36:54.719679 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000038>
+18154 16:36:54.719764 close(4)          = 0 <0.000035>
+18154 16:36:54.719844 openat(AT_FDCWD, "/usr/share/zoneinfo/America/North_Dakota", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000037>
+18154 16:36:54.719928 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000034>
+18154 16:36:54.720009 getdents64(4, 0x5d5eb0f988c0 /* 5 entries */, 32768) = 144 <0.000058>
+18154 16:36:54.720119 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000033>
+18154 16:36:54.720196 close(4)          = 0 <0.000035>
+18154 16:36:54.720274 openat(AT_FDCWD, "/usr/share/zoneinfo/America/Indiana", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000036>
+18154 16:36:54.720354 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000033>
+18154 16:36:54.720434 getdents64(4, 0x5d5eb0f988c0 /* 10 entries */, 32768) = 296 <0.000038>
+18154 16:36:54.720520 brk(0x5d5eb0fd1000) = 0x5d5eb0fd1000 <0.000044>
+18154 16:36:54.720619 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000034>
+18154 16:36:54.720696 close(4)          = 0 <0.000034>
+18154 16:36:54.720774 openat(AT_FDCWD, "/usr/share/zoneinfo/Europe", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000037>
+18154 16:36:54.720856 fstat(4, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0 <0.000033>
+18154 16:36:54.720936 getdents64(4, 0x5d5eb0f988c0 /* 63 entries */, 32768) = 1968 <0.000053>
+18154 16:36:54.721085 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000034>
+18154 16:36:54.721162 close(4)          = 0 <0.000034>
+18154 16:36:54.721240 openat(AT_FDCWD, "/usr/share/zoneinfo/Indian", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000036>
+18154 16:36:54.721321 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000033>
+18154 16:36:54.721399 getdents64(4, 0x5d5eb0f988c0 /* 13 entries */, 32768) = 392 <0.000063>
+18154 16:36:54.721829 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000037>
+18154 16:36:54.721912 close(4)          = 0 <0.000035>
+18154 16:36:54.721991 openat(AT_FDCWD, "/usr/share/zoneinfo/Africa", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000037>
+18154 16:36:54.722074 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000034>
+18154 16:36:54.722154 getdents64(4, 0x5d5eb0f988c0 /* 55 entries */, 32768) = 1736 <0.000048>
+18154 16:36:54.722336 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000034>
+18154 16:36:54.722414 close(4)          = 0 <0.000036>
+18154 16:36:54.722494 openat(AT_FDCWD, "/usr/share/zoneinfo/Antarctica", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000038>
+18154 16:36:54.722576 fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000034>
+18154 16:36:54.722656 getdents64(4, 0x5d5eb0f988c0 /* 13 entries */, 32768) = 408 <0.000044>
+18154 16:36:54.722887 getdents64(4, 0x5d5eb0f988c0 /* 0 entries */, 32768) = 0 <0.000061>
+18154 16:36:54.723205 close(4)          = 0 <0.000166>
+18154 16:36:54.723823 readlink("/etc/localtime", "/usr/share/zoneinfo/Etc/UTC", 256) = 27 <0.000064>
+18154 16:36:54.723959 openat(AT_FDCWD, "/usr/share/zoneinfo/Etc/UTC", O_RDONLY|O_CLOEXEC) = 4 <0.000040>
+18154 16:36:54.724053 statx(4, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=114, ...}) = 0 <0.000035>
+18154 16:36:54.724144 lseek(4, 0, SEEK_CUR) = 0 <0.000034>
+18154 16:36:54.724225 read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 114) = 114 <0.000037>
+18154 16:36:54.724309 read(4, "", 32)   = 0 <0.000033>
+18154 16:36:54.724417 statx(4, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=114, ...}) = 0 <0.000034>
+18154 16:36:54.724503 close(4)          = 0 <0.000034>
+18154 16:36:54.724609 listxattr("./..", "", 4096) = 0 <0.000041>
+18154 16:36:54.724711 listxattr("./.venv", "", 4096) = 0 <0.000037>
+18154 16:36:54.725154 listxattr("./__pycache__", "", 4096) = 0 <0.000052>
+18154 16:36:54.725275 listxattr("./app.py", "", 4096) = 0 <0.000037>
+18154 16:36:54.725363 listxattr("./first_trace.txt", "", 4096) = 0 <0.000039>
+18154 16:36:54.726577 listxattr("./report.csv", "", 4096) = 0 <0.000308>
+18154 16:36:54.727189 listxattr("./static", "", 4096) = 0 <0.000069>
+18154 16:36:54.727367 listxattr("./templates", "", 4096) = 0 <0.000058>
+18154 16:36:54.727542 listxattr("./trace.log", "", 4096) = 0 <0.000106>
+18154 16:36:54.727859 listxattr("./tracer.py", "", 4096) = 0 <0.000082>
+18154 16:36:54.728152 close(3)          = 0 <0.000132>
+18154 16:36:54.728464 write(1, "total 116\ndrwxr-xr-x  6 marri_hr"..., 797) = 797 <0.000231>
+18154 16:36:54.728815 sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0 <0.000033>
+18154 16:36:54.728896 munmap(0x7462a4677000, 12288) = 0 <0.000045>
+18154 16:36:54.729043 exit_group(0)     = ?
+18154 16:36:54.729468 +++ exited with 0 +++
